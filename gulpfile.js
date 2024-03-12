@@ -6,19 +6,20 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     minify = require('gulp-minify');
 
-// html task
+// HTML task
 gulp.task('html', function () {
     return gulp
         .src('stage/pug/*.pug')
-        .pipe(pug({ pretty: true }))
+        .pipe(pug())
+        .pipe(pug({ pretty: false }))
         .pipe(gulp.dest('dist'))
         .pipe(livereload());
 });
 
-// css task
+// CSS task
 gulp.task('css', function () {
     return gulp
-        .src(['stage/sass/*.css', 'stage/sass/*.scss'])
+        .src('stage/sass/**/*.scss') // Updated glob pattern to watch all Sass files
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(concat('style.min.css'))
@@ -27,8 +28,7 @@ gulp.task('css', function () {
         .pipe(livereload());
 });
 
-
-// js task
+// JS task
 gulp.task('js', function () {
     return gulp
         .src('stage/js/*.js')
@@ -37,13 +37,14 @@ gulp.task('js', function () {
         .pipe(livereload());
 });
 
-// watch task
+// Watch task
 gulp.task('watch', function () {
-    require('./server.js');
     livereload.listen();
-    gulp.watch('stage/pug/*.pug', gulp.parallel('html'));
-    gulp.watch(['stage/sass/*.scss', 'stage/sass/*.css'], gulp.parallel('css'));
-    gulp.watch('stage/js/**/*.js', gulp.parallel('js'));
+    require('./server.js');
+    gulp.watch('stage/pug/**/*.pug', gulp.series('html')); // Watch all Pug files
+    gulp.watch('stage/sass/**/*.scss', gulp.series('css')); // Watch all Sass files
+    gulp.watch('stage/js/**/*.js', gulp.series('js')); // Watch all JavaScript files
 });
 
-gulp.task('default', gulp.parallel('watch'));
+// Default task
+gulp.task('default', gulp.series('watch'));

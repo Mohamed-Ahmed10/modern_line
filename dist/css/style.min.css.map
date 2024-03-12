@@ -1,1 +1,1 @@
-{"version":3,"sources":["layout/_global.scss","style.scss"],"names":[],"mappings":"AAAA,KACI,sBCCJ,IACI","file":"style.min.css","sourcesContent":["body {\r\n    box-sizing: border-box;\r\n}\r\n","@import 'layout/global';\r\n\r\ndiv {\r\n    font-weight: bold;\r\n    // color: red\r\n}"]}
+{"version":3,"sources":["layout/_global.scss"],"names":[],"mappings":"AAAQ,oFAER,KACI","file":"style.min.css","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');\r\n\r\nbody {\r\n    box-sizing: border-box;\r\n}\r\n"]}
