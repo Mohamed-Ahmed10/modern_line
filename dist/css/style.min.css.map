@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/_global.scss","style.scss"],"names":[],"mappings":"AAAA,KACI,sBCCJ,IACI","file":"style.min.css","sourcesContent":["body {\r\n    box-sizing: border-box;\r\n}\r\n","@import 'layout/global';\r\n\r\ndiv {\r\n    font-weight: bold;\r\n    // color: red\r\n}"]}

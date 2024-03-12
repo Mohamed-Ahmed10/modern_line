@@ -28,6 +28,7 @@
     "gulp-sourcemaps": "^3.0.0"
   },
   "dependencies": {
+    "sass": "^1.71.1",
     "static-server": "^2.2.1"
   },
   "browserslist": [
