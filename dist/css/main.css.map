@@ -1,0 +1,1 @@
+{"version":3,"sources":["sass/layout/_global.scss"],"names":[],"mappings":"AAAA,IAAI,AAAC,CACD,UAAU,CAAE,UAAU,CACzB","file":"main.css","sourcesContent":["body {\r\n    box-sizing: border-box;\r\n}\r\n"]}
