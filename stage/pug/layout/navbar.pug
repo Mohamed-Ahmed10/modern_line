@@ -1,9 +1,9 @@
 -var navItems = [["Home", 'index.html'], ["About"] , ["Categories"] , ["Specialties"]  ];
--var navItemsAr = [["الرئيسية", 'index-ar.html'] ,["عنا","about-ar.html"] ,["الاقسام" , "Categories-ar.html"] ,["التخصصات" , "Specialties-ar.html"]  ];
+-var navItemsAr = [["الرئيسية", 'index-ar.html'] ,["عنا","about-ar.html"] ,["الاقسام" , "categories-ar.html"] ,["التخصصات" , "specialties-ar.html"]  ];
 nav.navbar.navbar-expand-lg
     .container-fluid
         a.navbar-brand(href='#') 
-            img(src="images/logo-transperant.png", alt="Site logo",width="100")
+            img(src="images/logo-transperant.png" alt="Site logo" width="100")
         button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
             span.navbar-toggler-icon
         #navbarSupportedContent.collapse.navbar-collapse
@@ -23,10 +23,11 @@ nav.navbar.navbar-expand-lg
                                     a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + "-ar.html" )= item[0]
                                 else
                                     a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + "-ar.html" )= item[0]
-            ul.navbar-nav
-                if language == 'en'
-                    li.nav-item
-                        a.nav-link(href='#') عربى
-                else
-                    li.nav-item
-                        a.nav-link(href='#') En
+            if (language == "ar")
+                each item , index in navItemsAr
+                    if(item[0] == pageTitle)
+                        a.link-offset-2.link-underline.link-underline-opacity-0.language.text-dark.fw-bold(href =  navItems[index][1] ? navItems[index][1] : (navItems[index][0]).toLowerCase() + '.html') English
+            else 
+                each item , index in navItems
+                    if(item[0] == pageTitle)
+                        a.link-offset-2.link-underline.link-underline-opacity-0.language.text-dark.fw-bold(href =  navItems[index][1] ? navItems[index][1] : (navItems[index][0]).toLowerCase() + '-ar.html') عربى
