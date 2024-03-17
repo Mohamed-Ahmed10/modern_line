@@ -1,0 +1,200 @@
+.feature {
+    background: #F5F7FA;
+    padding: 103px 0;
+}
+
+.feature .col-lg-4 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.feature .single-inner {
+    padding: 40px 33px 50px 41px;
+}
+
+.single-inner i::before {
+    margin-left: 0;
+    font-size: 50px;
+}
+
+.single-inner .flaticon-design-tool {
+    color: #0AB3E4;
+}
+
+.single-inner .flaticon-pyramid {
+    color: #4CD964;
+}
+
+.single-inner .flaticon-promotion {
+    color: #FFBC00;
+}
+
+.single-inner .fab {
+    font-size: 30px;
+    color: #0AB3E4;
+}
+
+.single-inner h4 {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 16px 0 20px 0;
+}
+
+.single-inner-ac {
+    background: #f6fdff !important;
+}
+
+.single-inner {
+    position: relative;
+}
+
+.single-inner .overly {
+    position: absolute;
+    background-color: rgba(10, 179, 228, 0.07);
+    overflow: hidden;
+    bottom: 0;
+    left: 0%;
+    right: 100%;
+    width: 0;
+    height: 100%;
+}
+
+.single-inner p {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6d6d6d
+}
+
+/* more-learn */
+.more-learn {
+    text-align: center;
+    position: relative;
+}
+
+.more-learn .learn {
+    background: rgba(10, 179, 228, 0.1);
+    width: 100%;
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    color: rgb(10, 179, 228);
+}
+
+.learn-contant {
+    padding-right: 32px;
+}
+
+.more-learn .overly1 {
+    position: absolute;
+    background-color: rgb(10, 179, 228);
+    overflow: hidden;
+    bottom: 0;
+    left: 0%;
+    right: 100%;
+    width: 0;
+    height: 100%;
+    display: block;
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+.more-learn .overly1 .fa {
+    font-size: 16px;
+}
+
+.learn-icon .fa {
+    color: rgb(10, 179, 228);
+}
+
+.single-feature-wprapper:hover .overly {
+    width: 100%;
+    right: 0;
+}
+
+.single-feature-wprapper:hover .overly1 {
+    width: 100%;
+    right: 0;
+}
+
+
+
+
+
+/* <div class="feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="single-feature-wprapper">
+                            <div class="single-inner">
+                                <div class="overly"></div>
+                                <i class="flaticon-design-tool"></i>
+                                <h4>UI/UX design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elity sed do eiusmod tempor ididunt labore east dolore magna you  aliqua.</p>
+                            </div>
+                            <div class="more-learn">
+                                <a href="#" class="learn">
+                                    <span class="learn-icon">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="overly1">
+                                    <span class="learn-contant">Learn more</span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-inner end -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="single-feature-wprapper">
+                            <div class="single-inner single-inner-ac">
+                                <div class="overly"></div>
+                                <i class="flaticon-pyramid"></i>
+                                <h4>UI/UX design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elity sed do eiusmod tempor ididunt labore east dolore magna you  aliqua.</p>
+                            </div>
+                            <div class="more-learn">
+                                <a href="#" class="learn">
+                                    <span class="learn-icon">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="overly1">
+                                    <span class="learn-contant">Learn more</span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-inner end -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="single-feature-wprapper">
+                            <div class="single-inner">
+                                <div class="overly"></div>
+                                <i class="flaticon-promotion"></i>
+                                <h4>UI/UX design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elity sed do eiusmod tempor ididunt labore east dolore magna you  aliqua.</p>
+                            </div>
+                            <div class="more-learn">
+                                <a href="#" class="learn">
+                                    <span class="learn-icon">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="overly1">
+                                    <span class="learn-contant">Learn more</span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-inner end -->
+                </div>
+            </div>
+        </div>
+ */
