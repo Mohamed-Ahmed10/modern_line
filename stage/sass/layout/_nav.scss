@@ -1,0 +1,9 @@
+.navbar {
+    background-color: $nav_bg;
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: $main_color;
+        font-weight: bold;
+    }
+}

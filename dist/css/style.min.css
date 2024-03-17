@@ -1,2 +1,2 @@
-@import"https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap";body{box-sizing:border-box}
+@import"https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap";:root[lang=ar]{direction:rtl}:root body{box-sizing:border-box;font-family:"Noto Kufi Arabic",sans-serif}.navbar{background-color:rgba(35,179,240,.5294117647)}.navbar .navbar-nav .nav-link.active,.navbar .navbar-nav .nav-link.show{color:#f06023;font-weight:bold}
 /*# sourceMappingURL=style.min.css.map */

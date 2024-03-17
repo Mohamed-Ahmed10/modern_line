@@ -1,12 +1,15 @@
 //site icon
-link(rel="icon" href="images/default_logo.png")
+link(rel="icon" href="images/logo.jpg")
 
 //normalize liberary
 link(rel="stylesheet" , href="css/normalize.css")
 
 
 //bootstrap
-link(rel="stylesheet" , href="css/bootstrap.min.css")
+if(language == 'en')
+    link(rel="stylesheet" , href="css/bootstrap.min.css")
+else
+    link(rel="stylesheet" href="css/bootstrap.rtl.min.css")
 
 //my css file
-link(rel="stylesheet", href="css/style.min.css")
+link(rel="stylesheet" href="css/style.min.css")
