@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
     sass = require('gulp-sass')(require('sass')),
     pug = require('gulp-pug'),
     livereload = require('gulp-livereload'),
@@ -33,6 +34,9 @@ gulp.task('js', function () {
     return gulp
         .src('stage/js/*.js')
         .pipe(concat('main.js'))
+        .pipe(gulp.dest('dist/js'))
+        .pipe(uglify())
+        .pipe(concat('main.min.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(livereload());
 });
