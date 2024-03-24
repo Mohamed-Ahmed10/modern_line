@@ -33,7 +33,6 @@ gulp.task('css', function () {
 gulp.task('js', function () {
     return gulp
         .src('stage/js/*.js')
-        .pipe(concat('main.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(uglify())
         .pipe(concat('main.min.js'))
