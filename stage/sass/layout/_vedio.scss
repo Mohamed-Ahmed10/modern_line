@@ -1,0 +1,34 @@
+
+  
+  iframe{
+   
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+   
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 30%;
+    color:orangered;
+    width: 60%;
+   padding: 20px;
+    margin: 50px;
+  }
+  .content p {
+    color: #FFFFFFB2;
+  }
+
+
+
+  @media only screen and (max-width: 1024px){
+	.content {
+        position: absolute;
+        bottom: 30%;
+        color:orangered;
+        width: 100%;
+        padding: 20px;
+        margin: 5px;
+      }
+}
