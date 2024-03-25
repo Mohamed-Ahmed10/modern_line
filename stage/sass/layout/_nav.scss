@@ -6,4 +6,10 @@
         color: $main_color;
         font-weight: bold;
     }
+
+    .custom_dropdown {
+        button {
+            color: #999
+        }
+    }
 }

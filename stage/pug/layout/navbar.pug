@@ -1,5 +1,6 @@
--var navItems = [["Home", 'index.html'], ["About"] , ["Categories"] , ["Specialties"]  ];
--var navItemsAr = [["الرئيسية",'index-ar.html'] ,["عنا"] ,["الاقسام" ] ,["التخصصات"]  ];
+-var navItems = [["Home", 'index.html'],["About"] ,["Contact us"] ,["Services","Custom wood made decoration","Custom wood made decoration gates","The Octanorm System","Media services","Media services stages","Furniture service","Digital printing services"],["Our projects","project1","project2","project3"]];
+-var navItemsAr = [["الرئيسية",'index-ar.html'],["عنا"] ,["تواصل معنا"],["خدماتنا","الديكورات الخشبية","الديكورات الخشبية - بوابات","الاوكتانورم","الخدمات الصوتية و المرئية" , "الخدمات الصوتية و المرئية المسارح","خدمات المفروشات","خدمات الطباعة"],["مشاريعنا","مشروع 1","مشروع 2","مشروع 3"]];
+
 nav.navbar.navbar-expand-lg
     .container-fluid
         a.navbar-brand(href='#') 
@@ -10,24 +11,42 @@ nav.navbar.navbar-expand-lg
             ul.navbar-nav.mx-auto.mb-2.mb-lg-0
                 if language == "en"
                     each item in navItems
-                        li.nav-item
-                            if pageTitle == item[0]
-                                a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + ".html" )= item[0]
-                            else
-                                a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + ".html" )= item[0]
-                else
-                    ul.navbar-nav.mx-auto.mb-2.mb-lg-0
-                        each item in navItemsAr
+                        if item.length <= 2
                             li.nav-item
                                 if pageTitle == item[0]
-                                    a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + "-ar.html" )= item[0]
+                                    a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase().split(" ").join("_") + ".html" )= item[0]
                                 else
-                                    a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase() + "-ar.html" )= item[0]
+                                    a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase().split(" ").join("_") + ".html" )= item[0]
+                        else 
+                            li.custom_dropdown
+                                button.drop_btn #{item[0]}
+                                .custom_dropdown-content
+                                    each section,index in item
+                                        if(index > 0)
+                                            a(href=`${section.toLowerCase().split(" ").join("_")}.html`) #{section}
+                                            hr.m-0
+                else
+                    ul.navbar-nav.mx-auto.mb-2.mb-lg-0
+                        each item,itemIndex in navItemsAr
+                            if item.length <= 2 
+                                li.nav-item
+                                    if pageTitle == item[0]
+                                        a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase().split(" ").join("_") + "-ar.html" )= item[0]
+                                    else
+                                        a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase().split(" ").join("_") + "-ar.html" )= item[0]
+                            else 
+                                li.custom_dropdown
+                                    button.drop_btn #{item[0]}
+                                    .custom_dropdown-content
+                                        each section,index in item
+                                            if(index > 0)
+                                                a(href=`${navItems[itemIndex][index].toLowerCase().split(" ").join("_")}-ar.html`) #{section}
+                                                hr.m-0
             if (language == "ar")
                 each item , index in navItemsAr
                     if(item[0] == pageTitle)
-                        a.link-offset-2.link-underline.link-underline-opacity-0.language.text-dark.fw-bold(href =  navItems[index][1] ? navItems[index][1] : (navItems[index][0]).toLowerCase() + '.html') English
+                        a.link-offset-2.link-underline.link-underline-opacity-0.language.text-dark.fw-bold(href =  navItems[index][1] ? navItems[index][1] : (navItems[index][0]).toLowerCase().split(" ").join("_") + '.html') English
             else 
                 each item , index in navItems
                     if(item[0] == pageTitle)
-                        a.link-offset-2.link-underline.link-underline-opacity-0.language.text-dark.fw-bold(href =  navItemsAr[index][1] ? navItemsAr[index][1] : (navItems[index][0]).toLowerCase() + '-ar.html') عربى
+                        a.link-offset-2.link-underline.link-underline-opacity-0.language.text-dark.fw-bold(href =  navItemsAr[index][1] ? navItemsAr[index][1] : (navItems[index][0]).toLowerCase().split(" ").join("_") + '-ar.html') عربى

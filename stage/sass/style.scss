@@ -2,8 +2,14 @@
 
 
 @import "variables/variables";
-// Components
+
+
+// Layout
 @import "layout/nav";
-@import "layout/vedio";
-@import "layout/partners";
 @import "layout/footer";
+
+
+// Components
+@import "layout/video";
+@import "layout/partners";
+@import "./components/dropdown"
