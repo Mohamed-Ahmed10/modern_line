@@ -1,29 +1,59 @@
 footer 
-    .container.text-center
+    .container.text-start.mycontainer
         .row.align-items-center
-            .col-lg-4.col-sm-12.text-center.align-items-center.mt-5 
-                h5 home 
-                h6 Departments
-                h6 Our Projects
-                h6 About us
+            .col-lg-3.col-sm-12.text-center.align-items-center.mt-5
+                a(href="#") 
+                    h5.orange  Home
+                a(href="#") 
+                    h5 Departments
+                a(href="#") 
+                    h5 Our Projects
+                a(href="#") 
+                    h5 About us
+                a(href="#") 
+                    h5 Contact us
 
-            .col-lg-4.col-sm-12.text-center.align-items-center.mt-5
-                h5 Contact us
+            .col-lg-6.col-sm-12.text-center.align-items-start.mt-5
+                a(href="#") 
+                    h5.orange Contact us
                 a(href="mailto:Feras@modernline.com.sa") 
-                    i.fa-regular.fa-envelope.fa-2x.mx-2
+                    h6
+                        i.fa-regular.fa-envelope
+                        |  Feras@modernline.com.sa
                 a(href="mailto:Sales@modernline.com.sa") 
-                    i.fa-regular.fa-envelope.fa-2x.mx-2
-                hr
+                    h6
+                        i.fa-regular.fa-envelope
+                        |  Sales@modernline.com.sa
+        
                 a(href="tel:966556641433") 
-                    i.fa-brands.fa-whatsapp.fa-2x.mx-2
+                    h6
+                    
+                        i.fa-solid.fa-phone
+                        |  966556641433 
                 a(href="tel:966541190500") 
-                    i.fa-brands.fa-whatsapp.fa-2x.mx-2
+                    h6
+                        i.fa-solid.fa-phone
+                        |  966541190500 
+                    
 
-            .col-lg-4.col-sm-12.text-center.align-items-center.mt-5
-                h5 Contact us
-                h6 Gmail
-                h6 WhatsApp
-                h6 Phone number
-            .col-lg-4.col-sm-12.text-center.align-items-center
-                img.img-fluid.w-100(src="images/logo-transparent.png" alt="logo")
+            .col-lg-3.col-sm-12.text-center.align-items-center
+                img.img-fluid.w-100.m-2(src="images/logo-transparent.png" alt="logo")
+                .container.text-center
+                    .m-3.mt-0.orange  Follow US 
+                    .row.align-items-center
+                        .col
+                            a(href="tel:966541190500") 
+                                h6 
+                                    i.fa-solid.fa-phone
+                        .col
+                            a(href="mailto:Sales@modernline.com.sa")
+                                h6 
+                                    i.fa-regular.fa-envelope
+                        .col
+                            a(href="#") 
+                                h6
+                                    i.fa-brands.fa-twitter
+
+.under_footer
+        |All copyrights reserved @2023
 
