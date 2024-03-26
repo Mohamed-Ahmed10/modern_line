@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 
 :root {
-    &[lang='ar'] {
-        direction: rtl;
-    }
+  &[lang="ar"] {
+    direction: rtl;
+  }
 
-    body {
-        box-sizing: border-box;
-        font-family: "Noto Kufi Arabic", sans-serif;
+  body {
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
 
-        a {
-            text-decoration: none;
-            color: #999
-        }
+    a {
+      text-decoration: none;
+      color: #999;
     }
+  }
 }
