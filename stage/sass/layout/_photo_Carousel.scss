@@ -171,3 +171,26 @@
     padding: 0px;
   }
 }
+.background-img {
+  background-image: url(images/background.png);
+  background-size: cover;
+}
+
+.black_header {
+  color: #1a1c20;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.black_header span {
+  color: #ee682c;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
