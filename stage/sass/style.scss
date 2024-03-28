@@ -1,14 +1,13 @@
+@import "variables/variables";
+
 @import "layout/global";
 
-@import "variables/variables";
 
 // Layout
 @import "layout/nav";
 @import "layout/footer";
 
 // Components
-@import "layout/video";
-@import "layout/partners";
-// @import "layout/home_our_serveices";
-@import "layout/photo_Carousel";
+@import "components/video";
+@import "components/partners";
 @import "./components/dropdown";
