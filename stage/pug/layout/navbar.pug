@@ -1,10 +1,10 @@
 -var navItems = [["Home", 'index.html'],["About"] ,["Contact us"] ,["Services","Custom wood made decoration","Custom wood made decoration gates","The Octanorm System","Media services","Media services stages","Furniture service","Digital printing services"],["Our projects","project1","project2","project3"]];
--var navItemsAr = [["الرئيسية",'index-ar.html'],["عنا"] ,["تواصل معنا"],["خدماتنا","الديكورات الخشبية","الديكورات الخشبية - بوابات","الاوكتانورم","الخدمات الصوتية و المرئية" , "الخدمات الصوتية و المرئية المسارح","خدمات المفروشات","خدمات الطباعة"],["مشاريعنا","مشروع 1","مشروع 2","مشروع 3"]];
+-var navItemsAr = [["الرئيسية",'index-ar.html'],["عنا"] ,["تواصل معنا"],["خدماتنا","الديكورات الخشبية","الديكورات الخشبية - بوابات","الاوكتانورم","الخدمات الصوتية و المرئية" , "الخدمات الصوتية و المرئية المسارح","خدمات المفروشات","خدمات الطباعة"],["مشاريعنا","مشروع 1","مشروع 2","مشروع 3"]]; 
 
 nav.navbar.navbar-expand-lg
     .container-fluid
         a.navbar-brand(href='#') 
-            img(src="images/logo-transparent.png" alt="Site logo" width="100")
+            img(src="images/logo.svg" alt="Site logo" width="100")
         button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
             span.navbar-toggler-icon
         #navbarSupportedContent.collapse.navbar-collapse
@@ -19,8 +19,8 @@ nav.navbar.navbar-expand-lg
                                     a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase().split(" ").join("_") + ".html" )= item[0]
                         else 
                             li.custom_dropdown
-                                button.drop_btn #{item[0]} 
-                                    img(src="images/icons/chevron-down-solid.svg", alt="chevron-down-solid" , style="width:10px")
+                                button.drop_btn  #{item[0]}
+                                    img(src="images/icons/chevron-down-solid.svg" alt="chevron-down-solid" , style="width:10px;margin-top:7px")
                                 .custom_dropdown-content
                                     each section,index in item
                                         if(index > 0)
@@ -32,12 +32,13 @@ nav.navbar.navbar-expand-lg
                             if item.length <= 2 
                                 li.nav-item
                                     if pageTitle == item[0]
-                                        a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase().split(" ").join("_") + "-ar.html" )= item[0]
+                                        a.nav-link.active(href="#")= item[0]
                                     else
-                                        a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase().split(" ").join("_") + "-ar.html" )= item[0]
+                                        a.nav-link(aria-current='page', href= item[1] ? item[1] : navItems[itemIndex][0].toLowerCase().split(" ").join("_") + "-ar.html" )= item[0]
                             else 
                                 li.custom_dropdown
                                     button.drop_btn #{item[0]} 
+                                        img(src="images/icons/chevron-down-solid.svg" alt="chevron-down-solid" , style="width:10px;margin-top:7px")
                                     .custom_dropdown-content
                                         each section,index in item
                                             if(index > 0)
@@ -47,7 +48,15 @@ nav.navbar.navbar-expand-lg
                 each item , index in navItemsAr
                     if(item[0] == pageTitle)
                         a.link-offset-2.link-underline.link-underline-opacity-0.language.text-dark.fw-bold(href =  navItems[index][1] ? navItems[index][1] : (navItems[index][0]).toLowerCase().split(" ").join("_") + '.html') English
+                    if(item.length > 2)
+                        each page,i in item 
+                            if(page == pageTitle )
+                                a.link-offset-2.link-underline.link-underline-opacity-0.language.text-dark.fw-bold(href= navItems[index][i].toLowerCase().split(" ").join("_") + '.html') English
             else 
                 each item , index in navItems
                     if(item[0] == pageTitle)
                         a.link-offset-2.link-underline.link-underline-opacity-0.language.text-dark.fw-bold(href =  navItemsAr[index][1] ? navItemsAr[index][1] : (navItems[index][0]).toLowerCase().split(" ").join("_") + '-ar.html') عربى
+                    if(item.length > 2)
+                        each page in item 
+                            if(page == pageTitle )
+                                a.link-offset-2.link-underline.link-underline-opacity-0.language.text-dark.fw-bold(href= page.toLowerCase().split(" ").join("_") + '-ar.html') عربى

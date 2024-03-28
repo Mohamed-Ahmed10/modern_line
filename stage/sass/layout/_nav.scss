@@ -3,13 +3,21 @@
 
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show {
-    color: $main_color;
+    background: $main_color;
     font-weight: bold;
+    font-weight: bold;
+    color: #FFF;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .custom_dropdown {
     button {
       color: #999;
+      display: flex;
+      align-content: center;
+      gap: 5px;
     }
   }
 }
