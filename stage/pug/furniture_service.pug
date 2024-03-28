@@ -8,7 +8,12 @@ html(lang="en")
         include helpers/styles
     body
         include layout/navbar
-        
+        include components/service_view_mixin
+        .container.service_view
+            h2.text-center.mt-4.service_title #{pageTitle} 
+            p.text-center.my-3 description
+            .row 
+                +service_view(27,"furniture")
 
         include layout/footer
         include helpers/scripts

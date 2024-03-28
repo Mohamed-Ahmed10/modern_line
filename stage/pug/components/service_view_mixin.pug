@@ -1,0 +1,6 @@
+-var counter = 1;
+mixin service_view(number_of_images,category)
+    while counter <= number_of_images
+        .col-md-6.col-sm-12.p-2
+            .card.h-100.justify-content-center
+                img.img-fluid(src="images/services_data/" + category +"/"+ counter++ +".jpg" alt="service image")
