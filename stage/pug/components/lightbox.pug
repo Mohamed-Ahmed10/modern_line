@@ -1,0 +1,55 @@
+
+.row
+  #carouselExample.carousel.slide
+    .carousel-inner
+      .carousel-item.active
+        img.hover-shadow.d-block.w-100.img-fluid(src= image_url_1 onclick='openModal();currentSlide(1)')
+      .carousel-item
+        img.hover-shadow.d-block.w-100.img-fluid(src= image_url_2 onclick='openModal();currentSlide(2)')
+      .carousel-item
+        img.hover-shadow.d-block.w-100.img-fluid(src= image_url_3 onclick='openModal();currentSlide(3)')
+      .carousel-item
+        img.hover-shadow.d-block.w-100.img-fluid(src= image_url_4 onclick='openModal();currentSlide(4)')
+    button.carousel-control-prev(type='button' data-bs-target='#carouselExample' data-bs-slide='prev')
+      span.fa-solid.fa-arrow-left(aria-hidden='true') 
+      span.visually-hidden Previous
+    button.carousel-control-next(type='button' data-bs-target='#carouselExample' data-bs-slide='next')
+      span.fa-solid.fa-arrow-right(aria-hidden='true')
+      span.visually-hidden Next
+
+// The Modal/Lightbox
+#myModal.modal
+  span.close.cursor(onclick='closeModal()') &times;
+  .modal-content
+    .mySlides
+      .numbertext 1 / 4
+      img.imgborder.img-fluid(src= image_url_4 style='width:100%')
+    .mySlides
+      .numbertext 2 / 4
+      img.img-fluid.imgborder(src= image_url_2 style='width:100%')
+    .mySlides
+      .numbertext 3 / 4
+      img.img-fluid.imgborder(src= image_url_3 style='width:100%')
+    .mySlides
+      .numbertext 4 / 4
+      img.img-fluid.imgborder(src= image_url_3 style='width:100%')
+    // Next/previous controls
+    a.prev(onclick='plusSlides(-1)') &#x276E;
+    a.next(onclick='plusSlides(1)') &#x276F;
+    // Caption text
+    .caption-container
+      p#caption
+    // Thumbnail image controls
+    .column
+      img.demo.img-fluid.imgborder(src= image_url_1 onclick='currentSlide(1)' alt='Nature')
+    .column
+      img.demo.img-fluid.imgborder(src= image_url_2 onclick='currentSlide(2)' alt='Snow')
+    .column
+      img.demo.img-fluid.imgborder(src= image_url_3 onclick='currentSlide(3)' alt='Mountains')
+    .column
+      img.demo.img-fluid.imgborder(src= image_url_4 onclick='currentSlide(4)' alt='Lights')
+
+
+
+
+
