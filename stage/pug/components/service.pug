@@ -1,4 +1,4 @@
-mixin service(project_name, description , image_url_1 ,  image_url_2 , image_url_3 , image_url_4  )
+mixin service(project_name, description , image_url_1 ,  image_url_2 , image_url_3 , image_url_4 , path )
   li.service= name 
     .container.text-center.section-service
       .row.align-items-start
@@ -11,6 +11,6 @@ mixin service(project_name, description , image_url_1 ,  image_url_2 , image_url
         .row
           .col-lg-4.col-md-3.col-sm-3
           .col-lg-4.col-md-6.col-sm-6.see-more.mb-5
-            a(href="")
+            a( href= path )
               h4 See More Projects
           .col-lg-4.col-md-3.col-sm-3 
