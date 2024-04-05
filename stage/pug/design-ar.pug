@@ -1,0 +1,19 @@
+- var pageTitle = '3d تصاميم';
+- var language = "ar"
+<!DOCTYPE html>
+html(lang="ar")
+  head
+    include helpers/meta
+    include helpers/fonts
+    include helpers/styles
+  body
+    include layout/navbar
+    include components/service_view_mixin
+    .container.service_view
+      h2.text-center.mt-4.service_title #{pageTitle} 
+      p.text-center.my-3 تملك مودرن لاين فريق من المصممين المحترفين والفنانين القادرين على ابتكار تصاميم إبداعية ومميزة تناسب كافة احتياجات العميل لجناحه أو معرضه أو مؤتمره أو فعاليته. يستطيع عملائنا مشاركة أفكارهم واختيار التصميم الذي يناسب رغباتهم ومنحنا شرف تنفيذ وتصميم إبداعهم على أرض الواقع
+      .row 
+        +service_view(57,"design")
+
+    include layout/footer
+    include helpers/scripts

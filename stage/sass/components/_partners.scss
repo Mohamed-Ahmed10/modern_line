@@ -35,7 +35,7 @@ $animationSpeed: 40s;
     height: 100px;
     position: absolute;
     width: 200px;
-    z-index: 2;
+    z-index: 10;
   }
 
   &::after {
@@ -62,11 +62,8 @@ $animationSpeed: 40s;
   }
 }
 .partners-text {
-  margin-top: 5px;
-
   color: #ee682c;
   text-align: center;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
