@@ -1,16 +1,16 @@
 footer {
-  display: flex;
-  //   height: 432px;
-  //   padding: 84px 267px 80px 267px;
+  height: auto;
+  padding: 20px 269px 50px 268px;
+  padding-bottom: 100px;
   justify-content: center;
   align-items: center;
-  text-align: start;
+  flex-shrink: 0;
   background: #f4f4f4;
   padding-bottom: 30px;
 }
-.mycontainer {
-  width: 80%;
-}
+// .mycontainer {
+//   width: 90%;
+// }
 .mycontainer a:hover {
   color: #da5d25;
 
@@ -43,4 +43,17 @@ footer {
 }
 .orange {
   color: #da5d25;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  footer {
+    display: flex;
+    height: auto;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    background: #f4f4f4;
+    padding-bottom: 30px;
+  }
 }

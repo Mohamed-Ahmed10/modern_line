@@ -40,10 +40,4 @@ function showSlides(n) {
 }
 
 
-
-
-
-
-
-
-
+  AOS.init();

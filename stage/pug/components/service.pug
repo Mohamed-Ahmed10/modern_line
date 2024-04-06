@@ -1,16 +1,16 @@
 mixin service(project_name, description , image_url_1 ,  image_url_2 , image_url_3 , image_url_4 , path ,see_more , idd , arrow_left ,  arrow_right ,padd)
   li.service= name 
-  div(class="container text-center section-service " class= padd)
-    .row.align-items-start
-      .col-12
-        .container.text-center
-          h2.mt-4.name-service= project_name
-          h4.description-service= description
-          include lightbox
-    .align-items-center.container-fluid.justify-content-center
-      .row
-        .col-lg-4.col-md-3.col-sm-3
-        .col-lg-4.col-md-6.col-sm-6.see-more.mb-5.mt-5
-          a( href= path )
-            h4= see_more
-        .col-lg-4.col-md-3.col-sm-3 
+    div(class="container text-center section-service " class= padd)
+      .row.align-items-start
+        .col-12
+          .container.text-center
+            h2.mt-4.name-service= project_name
+            h4.description-service= description
+            include lightbox
+      .align-items-center.container-fluid.justify-content-center
+        .row
+          .col-lg-4.col-md-3.col-sm-3
+          .col-lg-4.col-md-6.col-sm-6.see-more.mb-5.mt-5
+            a( href= path )
+              h4= see_more
+          .col-lg-4.col-md-3.col-sm-3 

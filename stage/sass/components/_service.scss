@@ -1,8 +1,8 @@
-.pet {
+.service {
   list-style: none;
   text-align: center;
   padding: 0px;
-  margin-top: 80px;
+  // margin-top: 80px;
 }
 .ulpet {
   padding: 0px;
@@ -47,7 +47,7 @@
 }
 
 // //////////////////////////////////////light box style//////////////////
-.row>.column {
+.row > .column {
   padding: 0 8px;
 }
 
@@ -206,6 +206,10 @@ img.hover-shadow {
 .imgborder {
   border-radius: 16px;
   height: 500px;
+}
+.hight_img {
+  border-radius: 16px;
+  height: 550px;
 }
 @media (min-width: 320px) and (max-width: 1024px) {
   .see-more {

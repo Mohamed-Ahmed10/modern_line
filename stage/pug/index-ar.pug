@@ -10,6 +10,8 @@ html(lang="ar")
     include layout/navbar
     include components/video
     include components/partners-ar
+    include components/department-ar
+
     .background-img 
       p.black_header  بعض الصور من
         span  مشاريعنا
@@ -20,11 +22,11 @@ html(lang="ar")
 
           .col-lg-12.col-md-12.col-sm-12
             +service("التصاميم","تملك مودرن لاين فريق من المصممين المحترفين والفنانين القادرين على ابتكار تصاميم إبداعية ومميزة تناسب كافة احتياجات العميل لجناحه أو معرضه أو مؤتمره أو فعاليته. يستطيع عملائنا مشاركة أفكارهم واختيار التصميم الذي يناسب رغباتهم ومنحنا شرف تنفيذ وتصميم إبداعهم على أرض الواقع",
-            "images/services_data/design/11.jpg",
-            "images/services_data/design/2.jpg" ,
-            "images/services_data/design/3.jpg",
-            "images/services_data/design/4.jpg",
-            "/design-ar.html",
+            "images/services_data/designs/1.jpg",
+            "images/services_data/designs/2.jpg" ,
+            "images/services_data/designs/3.jpg",
+            "images/services_data/designs/4.jpg",
+            "./3d_designs-ar.html",
             "رؤيه المزيد من مشاريعنا",
             "carouselExample_2",
             "fa-solid fa-arrow-right",  
@@ -69,7 +71,7 @@ html(lang="ar")
             "fa-solid fa-arrow-left")
 
           .col-lg-6.col-md-12.col-sm-12
-            +service("خدمة المفروشات","تقدم مودرن لاين للعملاء خدمة توفير المفروشات الداخلية للأجنحة طبقًا لقائمة معدة خصيصًا لتلبية رغبات العميل وتغطية كافة احتياجات الأجنحة، والفعاليات والمؤتمرات، والمعارض على أنواعها. ",
+            +service("خدمة المفروشات","تقدم مودرن لاين للعملاء خدمة توفير المفروشات الداخلية للأجنحة طبقًا لقائمة معدة خصيصًا لتلبية رغبات العميل وتغطية كافة احتياجات الأجنحة، والفعاليات والمؤتمرات   . ",
             "images/services_data/furniture/1.jpg",
             "images/services_data/furniture/2.jpg" ,  
             "images/services_data/furniture/3.jpg",
@@ -90,7 +92,7 @@ html(lang="ar")
             "رؤيه المزيد من مشاريعنا",
             "carouselExample_6",
             "fa-solid fa-arrow-right",
-            "fa-solid fa-arrow-left")
+            "fa-solid fa-arrow-left","padd")
 
-  include layout/footer
+  include layout/footer-ar
   include helpers/scripts

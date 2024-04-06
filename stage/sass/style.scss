@@ -1,6 +1,7 @@
 @import "./variables/variables";
 
 @import "./layout/global";
+@import "https://unpkg.com/aos@2.3.1/dist/aos.css";
 
 // Layout
 @import "./layout/nav";
@@ -12,3 +13,4 @@
 @import "./components/service";
 @import "./components/dropdown";
 @import "./components/service_view";
+@import "./components/department";
