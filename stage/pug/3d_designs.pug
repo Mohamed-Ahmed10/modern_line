@@ -1,0 +1,19 @@
+- var pageTitle = '3D designs';
+- var language = 'en'
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include helpers/meta
+    include helpers/fonts
+    include helpers/styles
+  body
+    include layout/navbar
+    include components/service_view_mixin
+    .container.service_view
+      h2.text-center.mt-4.service_title #{pageTitle} 
+      p.text-center.my-3 Modern Line's team of designers and engineers provides exotic ideas that answer the clients wishes, façade and requirements. That doesn’t stop clients from sharing their vision with us to reach an ideal design to execute, and have an exceptional result.
+      .row 
+        +service_view(33,"designs")
+
+    include layout/footer
+    include helpers/scripts
