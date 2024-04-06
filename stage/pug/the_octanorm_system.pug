@@ -2,18 +2,18 @@
 - var language = 'en'
 <!DOCTYPE html>
 html(lang="en")
-    head
-        include helpers/meta
-        include helpers/fonts
-        include helpers/styles
-    body
-        include layout/navbar
-        include components/service_view_mixin
-        .container.service_view
-            h2.text-center.mt-4.service_title #{pageTitle} 
-            p.text-center.my-3 description
-            .row 
-                +service_view(25,"octanorm")
+  head
+    include helpers/meta
+    include helpers/fonts
+    include helpers/styles
+  body
+    include layout/navbar
+    include components/service_view_mixin
+    .container.service_view
+      h2.text-center.mt-4.service_title #{pageTitle} 
+      p.text-center.my-3 Its high-quality, affordability and easy-to-install aluminum frames, poles and fiber panels present a wide range of feasible and flexible solutions for events and exhibitions pavilions and booths.
+      .row 
+        +service_view(25,"octanorm")
 
-        include layout/footer
-        include helpers/scripts
+    include layout/footer
+    include helpers/scripts

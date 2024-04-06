@@ -2,13 +2,95 @@
 - var language = 'ar'
 <!DOCTYPE html>
 html(lang="ar")
-    head
-        include helpers/meta
-        include helpers/fonts
-        include helpers/styles
-    body
-        include layout/navbar
-        //- include components/video
-        include components/partners
-        include layout/footer
-        include helpers/scripts
+  head
+    include helpers/meta
+    include helpers/fonts
+    include helpers/styles
+  body
+    include layout/navbar
+    include components/video
+    include components/partners-ar
+    .background-img 
+      p.black_header  بعض الصور من
+        span  مشاريعنا
+      include components/service
+      ul.service
+      .container.text-center
+        .row.align-items-start
+
+          .col-lg-12.col-md-12.col-sm-12
+            +service("التصاميم","تملك مودرن لاين فريق من المصممين المحترفين والفنانين القادرين على ابتكار تصاميم إبداعية ومميزة تناسب كافة احتياجات العميل لجناحه أو معرضه أو مؤتمره أو فعاليته. يستطيع عملائنا مشاركة أفكارهم واختيار التصميم الذي يناسب رغباتهم ومنحنا شرف تنفيذ وتصميم إبداعهم على أرض الواقع",
+            "images/services_data/design/11.jpg",
+            "images/services_data/design/2.jpg" ,
+            "images/services_data/design/3.jpg",
+            "images/services_data/design/4.jpg",
+            "/design-ar.html",
+            "رؤيه المزيد من مشاريعنا",
+            "carouselExample_2",
+            "fa-solid fa-arrow-right",  
+            "fa-solid fa-arrow-left" ,"padd") 
+
+            .col-lg-12.col-md-12.col-sm-12
+              +service("الديكورات الخشبية","يتم تنفيذ التصاميم المعتمدة وفقا لرغبات العميل وطبقا لمعايير الجودة العالمية من خلال ورشاتنا المجهزة بأحدث المعدات، والفنيين والحرفيين الموجودين في مودرن لاين، والذين يتميزون بسرعة في العمل، ودِقة في التنفيذ.",
+              "images/services_data/decoration/11.jpg",
+              "images/services_data/decoration/2.jpg" ,
+              "images/services_data/decoration/3.jpg",
+              "images/services_data/decoration/4.jpg",
+              "/custom_wood_made_decoration-ar.html",
+              "رؤيه المزيد من مشاريعنا",
+              "carouselExample_3",
+              "fa-solid fa-arrow-right",
+              "fa-solid fa-arrow-left","padd")
+
+          .col-lg-12.col-md-12.col-sm-12
+            +service("الأوكتانورم ","هو نظام ألماني عالي الجودة سريع التركيب يقدم مجموعة رائعة من الحلول الاقتصادية والعملية لأجنحة المعارض من خلال تشكيلة واسعة من هياكل الألومينيوم وألواح الفايبر",
+            "images/services_data/octanorm/1.jpg",
+            "images/services_data/octanorm/2.jpg" ,
+            "images/services_data/octanorm/3.jpg",
+            "images/services_data/octanorm/4.jpg",
+            "/the_octanorm_system-ar.html", 
+            "رؤيه المزيد من مشاريعنا",
+            "carouselExample_1",
+            "fa-solid fa-arrow-right",
+            "fa-solid fa-arrow-left",
+            "padd")
+
+
+          .col-lg-6.col-md-12.col-sm-12
+            +service("خدمة الطباعة",": تقدِّم مودرن لاين للعملاء خدمات الطباعة الخاصة بالمؤتمرات، الفعاليات والمعارض على أنواعها بدقة وجودة عالية من خلال أيادٍ ماهرة، ومعدات وتقنيات حديثة.",
+            "images/services_data/printing/1.jpg",
+            "images/services_data/printing/2.jpg" ,  
+            "images/services_data/printing/3.jpg",
+            "images/services_data/printing/4.jpg",
+            "/digital_printing_services-ar.html",
+            "رؤيه المزيد من مشاريعنا",
+            "carouselExample_4",
+            "fa-solid fa-arrow-right",
+            "fa-solid fa-arrow-left")
+
+          .col-lg-6.col-md-12.col-sm-12
+            +service("خدمة المفروشات","تقدم مودرن لاين للعملاء خدمة توفير المفروشات الداخلية للأجنحة طبقًا لقائمة معدة خصيصًا لتلبية رغبات العميل وتغطية كافة احتياجات الأجنحة، والفعاليات والمؤتمرات، والمعارض على أنواعها. ",
+            "images/services_data/furniture/1.jpg",
+            "images/services_data/furniture/2.jpg" ,  
+            "images/services_data/furniture/3.jpg",
+            "images/services_data/furniture/4.jpg",
+            "/furniture_service-ar.html",
+            "رؤيه المزيد من مشاريعنا",
+            "carouselExample_5",
+            "fa-solid fa-arrow-right",
+            "fa-solid fa-arrow-left")
+
+          .col-lg-12.col-md-12.col-sm-12
+            +service("خدمة المرئيات والصوتيات","تقدَّم مودرن لاين مجموعة من شاشات العرض الذكية وحلول إضاءة متنوعة، كما توفر مجموعة من المولدات الكهربائية والحلول الفنية التي تناسب الأجنحة وتلبي كافة احتياجات العميل. ",
+            "images/services_data/media/1.jpg",
+            "images/services_data/media/2.jpg" ,  
+            "images/services_data/media/3.jpg",
+            "images/services_data/media/4.jpg",
+            "/media_services-ar.html",
+            "رؤيه المزيد من مشاريعنا",
+            "carouselExample_6",
+            "fa-solid fa-arrow-right",
+            "fa-solid fa-arrow-left")
+
+  include layout/footer
+  include helpers/scripts
