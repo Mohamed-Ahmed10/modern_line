@@ -2,11 +2,76 @@
 - var language = 'en'
 <!DOCTYPE html>
 html(lang="en")
-    head
-        include helpers/meta
-        include helpers/fonts
-        include helpers/styles
-    body
-        include layout/navbar
-        include layout/footer
-        include helpers/scripts
+  head
+    include helpers/meta
+    include helpers/fonts
+    include helpers/styles
+  body
+    include layout/navbar
+    .contact.mt-5.mb-5
+      .container
+        .row.align-items-center
+          .col-lg-6.col-md-12.col-sm-12.left_contact_us
+            .contact_us.text-center
+              .container.align-items-center.justify-content-center
+                h5.mt-5 Contact Us
+                p Do you have any questions? We will be ready to help.
+                a(href="#").mt-5.contact_link.d-flex.align-items-center.justify-content-center
+                  img.m-3(src="images/gmail.svg" alt="..")
+                  p.mt-2  modern-line@gmail
+                a(href="#").mt-5.contact_link.d-flex.align-items-center.justify-content-center
+                  img.m-3(src="images/phone.svg" alt="..")
+                  p.mt-2  +23011763294396
+                a(href="#").mt-5.contact_link.d-flex.align-items-center.justify-content-center
+                  img.m-3(src="images/whatsapp.svg" alt="..")
+                  p.mt-2  +23011763294396
+                .container.text-center.mt-5.align-items-center.justify-content-center.mb-5
+                  .row.align-items-center.container.align-items-center.justify-content-center
+
+                    .col-2.icon-bg
+                      a(href="")
+                        img.icon.mrimg(src="images/face.svg" alt="..") 
+                    .col-1
+                    .col-2.icon-bg
+                      a(href="")
+                        img.icon(src="images/insta.svg" alt="..")
+                    .col-1
+                    .col-2.icon-bg
+                      a(href="")
+                        img.icon(src="images/tweter.svg" alt="..")
+
+
+
+
+
+          .col-lg-6.col-md-12.col-sm-12.right_contact_us.p-5.pt-3
+            .container.align-items-center.justify-content-center 
+              form.row.g-3.needs-validation(novalidate='')
+              .col-12.mt-5
+                label.form-label(for='validationCustom01') Name
+                input#validationCustom01.form-control(type='text' value='' required='')
+                .valid-feedback
+                  | Looks good!
+
+              .col-12.mt-5
+                label.form-label(for='validationCustomUsername') Mail
+                .input-group.has-validation
+                  input#validationCustomUsername.form-control(type='text' aria-describedby='inputGroupPrepend' required='')
+                  .invalid-feedback
+                    | Please choose a mail.
+              .col-12.mt-4
+                label.form-label(for='validationCustom03') phone
+                input#validationCustom03.form-control(type='text' required='')
+                .invalid-feedback
+                  | Please provide a valid number.
+
+              .col-12.mt-4
+                label(for='floatingTextarea2') Message
+                textarea#floatingTextarea2.form-control(placeholder='' style='height: 100px')
+
+              .col-12.mt-5.mb-4
+                button.text-center.mybtn(type='submit')
+                  |  send message   
+                  .fa-solid.fa-paper-plane 
+    include layout/footer
+    include helpers/scripts
