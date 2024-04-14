@@ -2,11 +2,52 @@
 - var language = 'en'
 <!DOCTYPE html>
 html(lang="en")
-    head
-        include helpers/meta
-        include helpers/fonts
-        include helpers/styles
-    body
-        include layout/navbar
-        include helpers/scripts
-        include layout/footer
+  head
+    include helpers/meta
+    include helpers/fonts
+    include helpers/styles
+  body
+    include layout/navbar
+    .container.mt-5
+      .about_us
+        .who_1.text-center
+          h3( class="who_header pt-5") What do we offer?
+          p.mt-3.who_p
+            span.ornge_span.m-2.fa-solid.fa-circle
+            |Thanks to we 
+            span.ornge_span  the innovative thinking of our team,
+            | provide nothing but services Distinguished to meet our customers’ expectations, 
+            span.ornge_span  vision and goals. 
+
+          p.mt-3.who_p
+            span.ornge_span.m-2.fa-solid.fa-circle
+            |Starting from innovative designs to 
+            span.ornge_span  implementing wings and ending with Constructing exhibitions and conferences
+            | with high quality and in accordance with To the best international standards.
+
+          h3.pt-5.who_header who are we ?
+          p.mt-3.who_p
+            span.ornge_span Modern line 
+            |  is a contracting company specialized in equipment and construction
+            span.ornge_span  Conferences, events and exhibitions of all kinds
+            | , as well We excel in providing all the necessary services for this sector.
+          img.mt-5.mb-5.img-fluid(src="images/logo-transparent.png" alt="")
+
+        .who_1.text-center.mt-5
+          h3.pt-5.who_header Why us?
+          p.mt-3.who_p
+            span.ornge_span Modern Line 
+            | is one of the strongest companies that owns and uses 
+            span.ornge_span  the global German Octanorm System. 
+            | To prepare exhibitions, it is also one of the first companies specialized in the field of construction,
+            span.ornge_span  implementation and provision of exhibition services And conferences 
+            | in the Kingdom of Saudi Arabia 
+
+          p.mt-5.pb-5.who_p
+            span.ornge_span Modern Line  
+            |Company also has the advantage of being considered the official contractor and executive arm for a number of the most important organizers 
+            span.ornge_span Exhibitions and conferences in the Kingdom of Saudi Arabia 
+
+
+    include layout/footer
+    include helpers/scripts
