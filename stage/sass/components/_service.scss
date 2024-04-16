@@ -201,6 +201,14 @@ img.hover-shadow {
   color: #ee682c;
   margin-bottom: 0px;
 }
+.see-more:hover h4 {
+  transition: 1s;
+  color: white;
+}
+.see-more:hover {
+  background: #ee682c;
+  transition: 1s;
+}
 .imgborder {
   border-radius: 16px;
   height: 500px;

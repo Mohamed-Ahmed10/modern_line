@@ -26,18 +26,34 @@
   color: #ee682c;
   font-size: 20px;
 }
-a.contact_link:hover,
-.contact_link > p:hover,
+
+.contact_link:hover .contact_link-p {
+  transition: 1s;
+  color: white;
+}
+a.contact_link:hover {
+  background: #ee682c;
+  transition: 1s;
+}
+.contact_link:hover .icon2 {
+  filter: brightness(var(--value, 1));
+  --value: 6;
+  transition: 0.5s;
+}
 .icon-bg:hover {
   background: #ee682c;
   transition: 1s;
-  color: #ededed;
+  color: white;
 }
 .icon {
   width: 35px;
   height: 35px;
   padding: 5px;
 }
+.icon:hover {
+  filter: invert(var(--value, 100%));
+}
+
 .icon-bg {
   background: #fff;
   border-radius: 50%;
