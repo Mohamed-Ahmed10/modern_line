@@ -2,13 +2,13 @@
   div(id= idd class="carousel slide")
     .carousel-inner
       .carousel-item.active
-        img.hover-shadow.d-block.w-100.img-fluid.hight_img(src= image_url_1 onclick='openModal();currentSlide(1)')
+        img.hover-shadow.d-block.w-100.img-fluid.hight_img(src= image_url_1)
       .carousel-item
-        img.hover-shadow.d-block.w-100.img-fluid.hight_img(src= image_url_2 onclick='openModal();currentSlide(2)')
+        img.hover-shadow.d-block.w-100.img-fluid.hight_img(src= image_url_2)
       .carousel-item
-        img.hover-shadow.d-block.w-100.img-fluid.hight_img(src= image_url_3 onclick='openModal();currentSlide(3)')
+        img.hover-shadow.d-block.w-100.img-fluid.hight_img(src= image_url_3)
       .carousel-item
-        img.hover-shadow.d-block.w-100.img-fluid.hight_img(src= image_url_4 onclick='openModal();currentSlide(4)')
+        img.hover-shadow.d-block.w-100.img-fluid.hight_img(src= image_url_4)
     button.carousel-control-prev(type='button' data-bs-target='#'+ idd data-bs-slide='prev')
       span(class= arrow_left aria-hidden='true') 
       span.visually-hidden Previous
@@ -47,8 +47,3 @@
       img.demo.img-fluid.imgborder.hight_img.lightbox-img(src= image_url_3 onclick='currentSlide(3)' alt='')
     .column
       img.demo.img-fluid.imgborder.hight_img.lightbox-img(src= image_url_4 onclick='currentSlide(4)' alt='')
-
-
-
-
-

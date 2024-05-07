@@ -12,13 +12,13 @@ nav.navbar.navbar-expand-lg
         if language == "en"
           each item in navItems
             if item.length <= 2
-              li.nav-item
+              li.nav-item.mx-1
                 if pageTitle == item[0]
                   a.nav-link.active(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase().split(" ").join("_") + ".html" )= item[0]
                 else
                   a.nav-link(aria-current='page', href= item[1] ? item[1] : item[0].toLowerCase().split(" ").join("_") + ".html" )= item[0]
             else 
-              li.custom_dropdown
+              li.custom_dropdown.mx-1
                 button.drop_btn  #{item[0]}
                   img(src="images/icons/chevron-down-solid.svg" alt="chevron-down-solid" , style="width:10px;margin-top:7px")
                 .custom_dropdown-content
@@ -30,13 +30,13 @@ nav.navbar.navbar-expand-lg
           ul.navbar-nav.mx-auto.mb-2.mb-lg-0
             each item,itemIndex in navItemsAr
               if item.length <= 2 
-                li.nav-item
+                li.nav-item.mx-1
                   if pageTitle == item[0]
                     a.nav-link.active(href="#")= item[0]
                   else
                     a.nav-link(aria-current='page', href= item[1] ? item[1] : navItems[itemIndex][0].toLowerCase().split(" ").join("_") + "-ar.html" )= item[0]
               else 
-                li.custom_dropdown
+                li.custom_dropdown.mx-1
                   button.drop_btn #{item[0]} 
                     img(src="images/icons/chevron-down-solid.svg" alt="chevron-down-solid" , style="width:10px;margin-top:7px")
                   .custom_dropdown-content
