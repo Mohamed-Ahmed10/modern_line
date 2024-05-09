@@ -4,12 +4,15 @@
   padding: 0px;
   // margin-top: 80px;
 }
+
 .ulpet {
   padding: 0px;
 }
+
 .padd {
   padding: 32px 131px 24px 132px;
 }
+
 .section-service {
   margin-top: 80px;
   border-radius: 30px;
@@ -47,7 +50,7 @@
 }
 
 // //////////////////////////////////////light box style//////////////////
-.row > .column {
+.row>.column {
   padding: 0 8px;
 }
 
@@ -56,6 +59,7 @@
   display: table;
   clear: both;
 }
+
 // .column {
 //   float: left;
 //   width: 25%;
@@ -190,33 +194,30 @@ img.hover-shadow {
 }
 
 .see-more {
-  color: #ee682c;
-  border-radius: 20px;
+  color: #ee682c !important;
+  border-radius: 10px;
   border: 1px solid #d4d4d4;
   background: #fff;
-  padding: 28px 13px;
+  padding: 10px;
 }
 
-.see-more a h4 {
-  color: #ee682c;
-  margin-bottom: 0px;
-}
-.see-more:hover h4 {
-  transition: 1s;
-  color: white;
-}
 .see-more:hover {
-  background: #ee682c;
   transition: 1s;
+  color: white !important;
+  background: #ee682c;
 }
+
+
 .imgborder {
   border-radius: 16px;
   height: 500px;
 }
+
 .hight_img {
   border-radius: 16px;
   height: 550px;
 }
+
 @media (min-width: 320px) and (max-width: 1024px) {
   .see-more {
     color: #ee682c;
@@ -227,6 +228,7 @@ img.hover-shadow {
     align-items: center;
     margin-left: auto;
   }
+
   .hight_img {
     border-radius: 16px;
     height: 300px;

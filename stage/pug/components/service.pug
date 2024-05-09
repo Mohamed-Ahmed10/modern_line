@@ -5,12 +5,11 @@ mixin service(project_name, description , image_url_1 ,  image_url_2 , image_url
         .col-12
           .container.text-center
             h2.mt-4.name-service= project_name
-            h4.description-service= description
+            h5.my-2.w-75.m-auto.description-service= description
             include lightbox
       .align-items-center.container-fluid.justify-content-center
         .row
           .col-lg-4.col-md-3.col-sm-3
-          .col-lg-4.col-md-6.col-sm-6.see-more.mb-5.mt-5
-            a(href = path)
-              h4= see_more
+          .col-lg-4.col-md-6.col-sm-6.mb-5.mt-5
+            a.see-more(href = path) #{see_more}
           .col-lg-4.col-md-3.col-sm-3 
