@@ -1,7 +1,17 @@
 .service_view {
+    overflow: hidden;
+
     .service_title {
         color: $main_color;
         font-weight: bold;
+    }
+
+    img {
+        transition: .3s all ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     p {

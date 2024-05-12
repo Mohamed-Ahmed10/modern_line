@@ -1,5 +1,8 @@
 .navbar {
-  background-color: $nav_bg;
+  background-color: rgba($nav_bg, 88%);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show {
