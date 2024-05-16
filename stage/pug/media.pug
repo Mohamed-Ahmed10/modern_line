@@ -1,0 +1,19 @@
+- var pageTitle = 'Media';
+- var language = 'en'
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include helpers/meta
+    include helpers/fonts
+    include helpers/styles
+  body
+    include layout/navbar
+    include components/service_view_mixin
+    .container.service_view
+      h2.text-center.mt-4.service_title #{pageTitle} 
+      p.text-center.my-3 Modern Line presents a wide range of smart display screens and light solutions in addition to electrical generators and technical solutions to fulfill clients' wanted vision for their pavilions, conferences, events or exhibitions in general.
+      .row 
+        +service_view(5,"media")
+
+    include layout/footer
+    include helpers/scripts

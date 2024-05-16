@@ -1,0 +1,19 @@
+- var pageTitle = 'الديكورات';
+- var language = "ar"
+<!DOCTYPE html>
+html(lang="ar")
+  head
+    include helpers/meta
+    include helpers/fonts
+    include helpers/styles
+  body
+    include layout/navbar
+    include components/service_view_mixin
+    .container.service_view
+      h2.text-center.mt-4.service_title #{pageTitle} 
+      p.text-center.my-3 يتم تنفيذ التصاميم المعتمدة وفقا لرغبات العميل وطبقا لمعايير الجودة العالمية من خلال ورشاتنا المجهزة بأحدث المعدات، والفنيين والحرفيين الموجودين في مودرن لاين، والذين يتميزون بسرعة في العمل، ودِقة في التنفيذ.
+      .row 
+        +service_view(14,"decoration")
+
+    include layout/footer-ar
+    include helpers/scripts

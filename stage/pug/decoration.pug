@@ -1,0 +1,19 @@
+- var pageTitle = 'Decoration';
+- var language = 'en'
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include helpers/meta
+    include helpers/fonts
+    include helpers/styles
+  body
+    include layout/navbar
+    include components/service_view_mixin
+    .container.service_view
+      h2.text-center.mt-4.service_title #{pageTitle} 
+      p.text-center.my-3 As the client approves a design, the next step goes to Modern line workshops facilities, where the magic happens, turning the design from a 3D artwork to a 3D architecture reality using nothing but the latest equipment and technology.
+      .row 
+        +service_view(14,"decoration")
+
+    include layout/footer
+    include helpers/scripts
