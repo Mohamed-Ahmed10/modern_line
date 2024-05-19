@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .our {
   color: #1a1c20;
   font-size: 32px;
@@ -13,22 +14,31 @@
   font-weight: 600;
   line-height: normal;
 }
+
 .service {
   color: #ee682c;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
+
 .card {
   border-radius: 20px;
   box-shadow: 0px 2px 6px 0px rgba(130, 169, 188, 0.08),
     0px 5px 50px 0px rgba(0, 68, 101, 0.08);
-    overflow: hidden;
+  transition: .5 all ease-in-out;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 15px 15px 15px #989898
+  }
 }
+
 .card-img-top {
   border-radius: 20px 20px 0px 0px;
   height: 250px;
 }
+
 .card-title {
   color: #ee682c;
   font-size: 24px;
@@ -36,6 +46,7 @@
   font-weight: 600;
   line-height: normal;
 }
+
 .card-text {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -44,14 +55,17 @@
   font-weight: 500;
   line-height: normal;
 }
+
 .mycard:hover {
   box-shadow: rgba(255, 172, 28, 0.199) -10px 10px,
     rgba(255, 172, 28, 0.19) -15px 15px;
 }
+
 .lightbox-img {
   display: flex;
   height: 100px;
 }
+
 .column {
   display: flex;
   width: 25%;
