@@ -1,15 +1,22 @@
+.contact {
+  margin-top: 90px;
+}
+
 .left_contact_us {
   background: #ededed;
 }
+
 .contact_us h5 {
   color: #ee682c;
   font-size: 30px;
 }
+
 .contact_us p {
   color: rgba(26, 28, 32, 0.6);
   font-size: 20px;
   font-weight: 600;
 }
+
 .contact_link {
   border-radius: 16px;
   background: #fff;
@@ -18,10 +25,12 @@
 
   padding: 15px 25px;
 }
+
 .contact_link img {
   height: 50px;
   width: 50px;
 }
+
 .contact_link p {
   color: #ee682c;
   font-size: 20px;
@@ -31,25 +40,30 @@
   transition: 1s;
   color: white;
 }
+
 a.contact_link:hover {
   background: #ee682c;
   transition: 1s;
 }
+
 .contact_link:hover .icon2 {
   filter: brightness(var(--value, 1));
   --value: 6;
   transition: 0.5s;
 }
+
 .icon-bg:hover {
   background: #ee682c;
   transition: 1s;
   color: white;
 }
+
 .icon {
   width: 35px;
   height: 35px;
   padding: 5px;
 }
+
 .icon:hover {
   filter: invert(var(--value, 100%));
 }
@@ -61,9 +75,11 @@ a.contact_link:hover {
   height: 75px;
   line-height: 70px;
 }
+
 .right_contact_us {
   background: #fffaf4;
 }
+
 .mrimg {
   margin-left: 10px;
 }
@@ -75,6 +91,7 @@ input {
   border: 1px solid #d8d8d8;
   background: #f9f9f9;
 }
+
 textarea {
   height: 125px;
   flex-shrink: 0;
@@ -82,6 +99,7 @@ textarea {
   border: 1px solid #d8d8d8;
   background: #f9f9f9;
 }
+
 label {
   color: #000;
   font-size: 24px;
@@ -89,9 +107,9 @@ label {
   font-weight: 400;
   line-height: normal;
 }
+
 .mybtn {
   width: 100%;
-  padding: 16px 193px 16px 160px;
   align-items: center;
   gap: 8px;
   border-radius: 12px;
@@ -100,10 +118,12 @@ label {
   color: #fff;
   font-size: 24px;
 }
+
 .left_contact_us,
 .right_contact_us {
   height: 797px;
 }
+
 @media (min-width: 320px) and (max-width: 1024px) {
   .contact_link {
     border-radius: 16px;
@@ -112,10 +132,12 @@ label {
     margin: auto;
     padding: 25px 25px;
   }
+
   .left_contact_us,
   .right_contact_us {
     height: auto;
   }
+
   .mybtn {
     width: 100%;
     padding: 16px 19px 16px 16px;
