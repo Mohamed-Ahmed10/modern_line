@@ -4,7 +4,7 @@
   &[lang="ar"] {
     direction: rtl;
   }
-  
+
 
   body {
     box-sizing: border-box;
@@ -15,6 +15,7 @@
       text-decoration: none;
       color: #999;
     }
+
     // font-size: 0.8rem;
     // font-size: 62.5%;
   }
@@ -31,5 +32,9 @@
   ::-webkit-scrollbar-thumb {
     background: #ee682c;
     border-radius: 15px;
+  }
+
+  .ltr {
+    direction: ltr;
   }
 }

@@ -13,7 +13,7 @@ html(lang="ar")
         .row.align-items-center
           .col-lg-6.col-md-12.col-sm-12.left_contact_us
             .contact_us.text-center
-              .container.align-items-center.justify-content-center
+              .container.align-items-center.justify-content-center.ltr
                 h5.mt-5 تواصل معنا
                 p لديك اي سؤال ؟ سنكون جاهزين لمساعدتك.
                 a(href="mailto:info@modernline.com.sa").mt-5.contact_link.d-flex.align-items-center.justify-content-center.direction
@@ -25,7 +25,7 @@ html(lang="ar")
                 a(href="tel:+966556641433").mt-5.contact_link.d-flex.align-items-center.justify-content-center
                   img.m-3.icon2(src="images/whatsapp.svg" alt="..")
                   p.mt-2.contact_link-p +966556641433
-                .d-flex.mt-4.mx-4
+                .d-flex.mt-4.mx-4.justify-content-evenly
                   .icon-bg.mx-2
                     a(href="")
                       i.fa-brands.fa-facebook-f.fa-lg.text-dark
@@ -64,5 +64,5 @@ html(lang="ar")
                 button.text-center.mybtn(type='submit')
                   |  ارسل الرساله  
                   .fa-solid.fa-paper-plane
-    include layout/footer
+    include layout/footer-ar
     include helpers/scripts
