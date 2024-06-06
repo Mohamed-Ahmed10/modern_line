@@ -5,14 +5,16 @@ var gulp = require('gulp'),
     pug = require('gulp-pug'),
     livereload = require('gulp-livereload'),
     sourcemaps = require('gulp-sourcemaps'),
-    minify = require('gulp-minify');
+    minify = require('gulp-minify'),
+    htmlPrettify = require('gulp-html-prettify');
+
 
 // HTML task
 gulp.task('html', function () {
     return gulp
         .src('stage/pug/*.pug')
         .pipe(pug())
-        .pipe(pug({ pretty: false }))
+        .pipe(htmlPrettify({ indent_char: ' ', indent_size: 2 }))
         .pipe(gulp.dest('dist'))
         .pipe(livereload());
 });
